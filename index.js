@@ -54,6 +54,38 @@ En este curso aprenderás los principales contenidos del Derecho Civil:
 
 📌 *Derechos reales:* relación de las personas con los bienes (propiedad, posesión, etc.).
 
+────────────────────
+
+📖 *Estructura del Código Civil*
+
+El Código Civil está organizado de la siguiente manera:
+
+📘 *Título Preliminar:* Artículos I al X
+
+📗 *Libro I: Derechos de las Personas* (Art. 1 - 139)
+
+📗 *Libro II: Acto Jurídico* (Art. 140 - 232)
+
+📗 *Libro III: Derecho de Familia* (Art. 233 - 659)
+
+📗 *Libro IV: Derecho de Sucesiones* (Art. 660 - 880)
+
+📗 *Libro V: Derechos Reales* (Art. 881 - 1131)
+
+📗 *Libro VI: Las Obligaciones* (Art. 1132 - 1350)
+
+📗 *Libro VII: Fuente de las Obligaciones* (Art. 1351 - 1988)
+
+📗 *Libro VIII: Prescripción y Caducidad* (Art. 1989 - 2007)
+
+📗 *Libro IX: Registros Públicos* (Art. 2008 - 2045)
+
+📗 *Libro X: Derecho Internacional Privado* (Art. 2046 - 2111)
+
+📕 *Título Final:* (Art. 2112 - 2122)
+
+────────────────────
+
 Estos temas te ayudarán a comprender cómo funciona la ley en la vida diaria.
 
 _Responde *MENU* para volver al inicio._`,
@@ -139,7 +171,7 @@ app.post("/webhook", (req, res) => {
   res.send(twiml);
 });
 
-// Ruta de verificación (para saber si el servidor está activo)
+// Ruta de verificación
 app.get("/", (req, res) => {
   res.send("✅ Chatbot Derecho Civil activo y funcionando.");
 });
@@ -147,6 +179,7 @@ app.get("/", (req, res) => {
 // ============================================================
 // INICIAR SERVIDOR
 // ============================================================
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
